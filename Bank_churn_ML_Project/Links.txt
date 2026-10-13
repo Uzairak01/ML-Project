@@ -1,0 +1,2 @@
+Data set download link
+https://www.kaggle.com/datasets/barelydedicated/bank-customer-churn-modeling?resource=download
