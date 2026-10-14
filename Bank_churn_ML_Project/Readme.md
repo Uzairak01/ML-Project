@@ -81,6 +81,50 @@ cd "Bank_churn_ML_Project/Code"
 jupyter notebook ML_Project_Churn.ipynb
 ```
 
+## Current Work Completed
+
+The project has already completed the core machine learning workflow and model evaluation stage:
+
+- Loaded the churn dataset and cleaned irrelevant identifier columns: `RowNumber`, `CustomerId`, and `Surname`
+- Split the data into training and testing sets using stratification to avoid class imbalance leakage
+- Separated numerical and categorical variables and built a preprocessing pipeline using:
+  - `StandardScaler` for numeric features
+  - `OneHotEncoder` for categorical features
+- Trained and compared multiple classification models:
+  - Baseline Dummy Classifier
+  - Logistic Regression
+  - K-Nearest Neighbors
+  - Decision Tree
+  - Random Forest
+  - XGBoost
+- Evaluated model performance using accuracy, precision, recall, F1-score, and ROC-AUC
+
+### Best Results Observed
+
+From the current notebook execution:
+
+- Random Forest achieved the highest performance:
+  - Accuracy: `0.8683`
+  - Precision: `0.7842`
+  - Recall: `0.4877`
+  - F1-Score: `0.6014`
+  - ROC-AUC: `0.8652`
+- XGBoost also performed strongly:
+  - Accuracy: `0.8637`
+  - Precision: `0.7371`
+  - Recall: `0.5139`
+  - F1-Score: `0.6056`
+  - ROC-AUC: `0.8487`
+
+### Hyperparameter Tuning
+
+The notebook also includes tuning for the top models:
+
+- Tuned Random Forest parameters: `{'max_depth': 15, 'min_samples_split': 5, 'n_estimators': 200}`
+- Tuned XGBoost parameters: `{'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100}`
+
+These tuning runs confirm that the project has moved beyond basic model training and is now focused on performance optimization and result interpretation.
+
 ## Notes
 
 This project is suitable for learning:
@@ -89,6 +133,7 @@ This project is suitable for learning:
 - preprocessing pipelines
 - class imbalance handling considerations
 - classification model evaluation
+- model comparison and hyperparameter tuning
 
 ## License
 
