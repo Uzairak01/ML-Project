@@ -1,0 +1,34 @@
+BANK CUSTOMER CHURN DATASET
+
+Overview
+This dataset contains customer information for a bank. It is used to predict whether a customer left the bank. Each row represents one customer.
+
+Target
+Exited
+  1 = customer left the bank
+  0 = customer stayed
+
+Columns
+RowNumber       Row number in the source dataset; an index, not a customer characteristic.
+CustomerId      Customer identifier.
+Surname         Customer surname.
+CreditScore     Customer's credit score.
+Geography       Customer's country; categories include France, Spain, and Germany.
+Gender          Customer's gender.
+Age             Customer's age in years.
+Tenure          Number of years the customer has been with the bank.
+Balance         Customer's account balance.
+NumOfProducts   Number of bank products the customer uses.
+HasCrCard       Whether the customer has a credit card (1 = yes, 0 = no).
+IsActiveMember  Whether the customer is an active member (1 = yes, 0 = no).
+EstimatedSalary Estimated customer salary.
+Exited          Whether the customer left the bank (1 = yes, 0 = no); this is the prediction target.
+
+Use in this project
+RowNumber, CustomerId, and Surname are removed before modeling because they are identifiers rather than useful customer behavior or account features. Exited is separated as the target. The remaining columns are used as model inputs.
+
+Numeric features are scaled, and categorical features such as Geography and Gender are one-hot encoded. The data is split into training and testing sets before preprocessing is fitted, to avoid using test-set information during training.
+
+
+Data set download link
+https://www.kaggle.com/datasets/barelydedicated/bank-customer-churn-modeling?resource=download
