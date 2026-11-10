@@ -32,3 +32,7 @@ Numeric features are scaled, and categorical features such as Geography and Gend
 
 Data set download link
 https://www.kaggle.com/datasets/barelydedicated/bank-customer-churn-modeling?resource=download
+
+
+GITHUB REPOSITORY LINK (CODE & DOCUMENTATION):
+  https://github.com/Uzairak01/ML-Project
