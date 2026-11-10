@@ -26,8 +26,28 @@ Key features include:
 - `EstimatedSalary`
 - `Exited` (target)
 
-## Project Structure
-# Bank Customer Churn Prediction
+## Project Directory Structure
+```text
+GroupXX_ML_Project/
+├── Code/
+│   ├── ML_Project_Churn.ipynb    # Main Jupyter Notebook with complete workflow
+│   └── requirements.txt         # Required Python packages and versions
+├── Dataset/
+│   ├── Churn_Modelling.csv      # Raw CSV dataset
+│   └── Dataset Information.txt  # Attribute metadata and descriptions
+├── Presentation/
+│   └── ML_Project_Presentation.pptx # Final viva & presentation slide deck
+├── Report/
+│   ├── ML_Project_Report.pdf     # Full IEEE-formatted academic project report
+│   ├── EDA_Target_Distribution.png
+│   ├── EDA_Categorical_Features.png
+│   ├── EDA_Numerical_Distributions.png
+│   ├── EDA_Correlation_Matrix.png
+│   └── Model_Evaluation_Plots.png
+└── README.md                    # Project documentation
+```
+
+## Bank Customer Churn Prediction
 
 This project builds a machine learning model to predict whether a bank customer is likely to leave the bank (churn). It uses a customer dataset with demographic, account, and behavioral features and applies preprocessing and classification techniques to evaluate predictive performance.
 
